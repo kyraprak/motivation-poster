@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Motivational Post</title>
+    <!-- link fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <!-- link css -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .bar {
+            width: 240px;
+            height: 10px;
+            background: #020617;
+            border-radius: 200px;
+            border: 1 px solid #1f2937;
+            overflow: hidden;
+            margin: 0 auto;
+            box-shadow: 0 0 10px #37123C;
+        }
+/* inline css */
+        .fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #37123C, #ECA400, #646F4B);
+            animation: load 3s ease-out forwards; 
+            /* forward = stay at 100% don't snap back */
+        }
+
+        @keyframes load {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 100%;
+            }
+        }    
+</style>     
+</head>
+
+<body>
+    <main class="container glass">
+        <div class="post-content">
+            <h1 class="main-heading">Pressure reveals potential</h1>
+            <img src="chess.jpg" 
+                 alt="motivational and deep image, user decides their own choices" 
+                 class="post-image rotate-3d">
+
+            <p class="quote">
+                "Adversity has the effect of eliciting talents which in 
+                prosperous circumstances would have lain dormant."
+                <br><span class="author">- Horace</span>
+            </p>
+                
+    </main>
+    <div class="bar">
+    <div class="fill">
+    </div>
+    </div>
+    <footer class="attribution">
+    Challenge : Resilience Loading...
+    </footer>
+</body>
+</html>
